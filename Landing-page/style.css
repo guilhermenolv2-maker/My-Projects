@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(235, 255, 255);
+      font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100vh;
+  width: 100vw;
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90vh;
+    overflow: hidden;
+    background-color: white;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.411);
+    transition: width .2s, height .2s;
+    transition-timing-function: ease;
+}
+
+#imagem{
+    background-image: url(imagens/background.jpg);
+    background-size: cover;
+    height: 200px;
+    background-position: center center;
+    display: block;
+    
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#formulario{
+    display: block;
+    padding: 10px;
+}
+input[type=submit]{
+    display: block;
+    background-color: #336dff;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.9em;
+    width: 100%;
+    height: 40px;
+    border: none;
+    position: relative;
+}
+input[type=submit]:hover{
+    background-color: #0038c7;
+    cursor: pointer;
+    transform: translateY(-2px);
+    transition: all .3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+.campo{
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dadce0;
+box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.campo i{
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.9em;
+    
+}
+.campo input{
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.campo:focus-within{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+#formulario > h1 {
+    text-align: center;
+}
+#formulario > p{
+    font-size: 0.9em;
+    text-align: left;
+    padding: 10px 0px;
+    color: rgba(0, 0, 0, 0.497);
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.esq-senha{
+  display: block;
+    text-align: right;
+font-size: 0.9em;
+margin-bottom: 10px;
+
+text-decoration: none;
+    color: #336dff;
+}
+.ou-continue-com{
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px;
+}
+.criar-conta{
+    font-size: 0.9em;
+    padding: 12px;
+    text-align: center;
+}
+.criar-conta > a{
+    text-decoration: none;
+    color: #336dff;
+}
+.criar-conta > a:hover{
+    color: #0038c7;
+    text-decoration: underline;  
+}
+.esq-senha:hover{
+    color: #0038c7;
+    text-decoration: underline;
+}
+.google-btn,.github-btn{
+    padding: 12px 20px;
+    border: 1px solid #dadce0;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #3c4043;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.google-btn:hover{
+    background-color: #e9e9e9b9;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    transform: translateY(-2px);
+}
+
+.google-btn:active{
+    transform: translateY(0);
+}
+
+.google-btn img{
+    width: 20px;
+    height: 20px;
+}
+
+.github-btn:hover{
+    background-color: #e9e9e9b9;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    transform: translateY(-2px);
+}
+
+.github-btn:active{
+    transform: translateY(0);
+}
+
+
+.social-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.google-btn,
+.github-btn{
+    flex: 1;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.github-btn i{
+    font-size: 20px;
+}
+.divisor{
+    display:flex;
+    align-items:center;
+    color:#888;
+    padding: 5px;
+}
+.divisor::before,
+.divisor::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#dadce0;
+}
+.divisor span{
+    padding:0 10px;
+}
+
+  

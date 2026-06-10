@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:400px;
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#1e293b;
+}
+
+.input-area{
+    display:flex;
+    gap:10px;
+}
+
+input{
+    flex:1;
+    padding:15px;
+    border:none;
+    background:#f1f5f9;
+    border-radius:10px;
+    font-size:1rem;
+}
+
+#btnAdicionar{
+    padding:15px;
+    border:none;
+    background:#16a34a;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#btnAdicionar:hover{
+    background:#2fdc6e;
+}
+
+.filtros{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin:20px 0;
+}
+
+.filtro{
+    border:none;
+    background:#e2e8f0;
+    padding:8px 15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.ativo{
+    background:#16a34a;
+    color:white;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background:#f8fafc;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+li.concluida span{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.acoes{
+    display:flex;
+    gap:8px;
+}
+
+.check{
+    background:#16a34a;
+}
+
+.delete{
+    background:#dc2626;
+}
+
+.acoes button{
+    border:none;
+    color:white;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.rodape{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+    color:#475569;
+}
